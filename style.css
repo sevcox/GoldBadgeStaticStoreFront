@@ -1,0 +1,347 @@
+/* Common Elements */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background: url(https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60)
+    no-repeat fixed top center;
+  padding: 0;
+  margin: 0;
+  background-size: 100% 100%;
+}
+a {
+  text-decoration: none;
+}
+h4 {
+  display: inline;
+  letter-spacing: 5px;
+  font-size: 80px;
+  padding: 9vw;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #23430c;
+}
+/* Header/NavBar */
+.navbarContainer {
+  width: 95%;
+  margin: 0;
+}
+header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#logo {
+  float: left;
+  height: 70px;
+  width: 90px;
+  border-radius: 15px;
+}
+nav {
+  float: right;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 300;
+  font-size: large;
+}
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 20px;
+  position: relative;
+}
+nav a {
+  color: #5f1818;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: green;
+}
+nav a:before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 250ms;
+}
+nav a:hover:before {
+  width: 100%;
+}
+
+/* Home Page */
+#home {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#homepic {
+  width: 100vw;
+  height: 100vh;
+}
+#home h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  font-size: 10em;
+  -webkit-text-stroke: 1px #5f1818;
+}
+/* About Page */
+#about {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.aboutHeading {
+  display: inline-block;
+  width: 30%;
+  padding: 15px;
+}
+#about h1 {
+  position: relative;
+  font-size: 5em;
+  text-align: left;
+}
+.aboutparagraph {
+  display: inline-block;
+  position: relative;
+  width: 66%;
+  padding: 15px;
+  font-size: 3vh;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #23430c;
+}
+/* Shop Page */
+.shopimgs {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 3px;
+}
+.shopimgs img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+.container {
+  display: inline-block;
+  position: relative;
+  margin: 2px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: darkgreen;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.container:hover .overlay {
+  transform: scale(1);
+}
+.text {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 5px;
+}
+.viewButton a {
+  padding: 8px 16px;
+}
+.viewButton:hover {
+  color: black;
+}
+.viewButton {
+  color: white;
+}
+.shopText {
+  width: 100vw;
+}
+#pageBreak span a:hover {
+  color: darkgreen;
+}
+#pageBreak {
+  display: block;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+  text-decoration: none;
+}
+#pageBreak a {
+  color: white;
+  letter-spacing: 20px;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 0px 1px 4px #23430c;
+}
+#pageBreak:before {
+  content: "";
+  display: block;
+  width: 39%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+#pageBreak:after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+/* Join Page */
+#join {
+  display: flex;
+}
+iframe {
+  display: inline-block;
+  position: relative;
+  width: 50vw;
+  height: 85vh;
+  margin: 100px 5px 20px 20px;
+}
+.joinWrapper {
+  display: inline-block;
+  width: 45vw;
+  height: 70vh;
+  margin: 100px 5px 20px 20px;
+}
+.joinHeading {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+.joinHeading h1 {
+  margin-block-start: 0;
+  margin-block-end: 20px;
+}
+.joinParagraph {
+  position: relative;
+  text-align: center;
+}
+.discount {
+  position: relative;
+  text-align: center;
+  font-size: 19px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  border: 7px dashed darkgreen;
+  padding: 1px;
+  -webkit-text-stroke: 2px white;
+}
+.discount:hover {
+  background-color: lightgreen;
+  color: black;
+  text-transform: lowercase;
+  -webkit-text-stroke: 1px black;
+}
+.formContainer {
+  position: relative;
+  margin: 30px;
+  padding: 25px;
+  border: 10px double darkgreen;
+  text-align: center;
+}
+label {
+  margin: 10px;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 0px 2px 2px #23430c;
+  letter-spacing: 3px;
+}
+input[type="text"] {
+  position: realtive;
+  width: 87%;
+  padding: 10px;
+  margin: 5px;
+}
+input[type="password"] {
+  position: relative;
+  width: 15%;
+  padding: 10px;
+}
+input[type="submit"] {
+  letter-spacing: 3px;
+  padding: 3px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: darkgreen;
+  color: white;
+}
+input[type="text"]:focus {
+  background-color: lightgreen;
+}
+input[type="password"]:focus {
+  background-color: lightgreen;
+}
+input[type="submit"]:hover {
+  background-color: lightgreen;
+  color: black;
+}
+/* Footer */
+footer {
+  background-color: #302721;
+  height: 25px;
+  font-size: 1.2em;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em 2em;
+}
+footer ul#menuFooter {
+  display: inline-block;
+  list-style: none;
+  margin: 0 0 0 0.6em;
+  padding: 0;
+}
+footer ul li {
+  display: inline-block;
+  padding: 0 0.7em 0 0;
+  margin: 0;
+}
+footer ul li::before {
+  content: "| ";
+  padding-right: 0.7em;
+}
+footer a,
+footer a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+div.clear {
+  clear: both;
+  font-size: 1%;
+}
